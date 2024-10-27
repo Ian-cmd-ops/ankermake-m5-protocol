@@ -16,6 +16,8 @@ services:
             - FLASK_PORT=4470
         volumes:
             - ankerctl_vol:/root/.config/ankerctl
+        ports:
+            - 4470:4470
 
 volumes:
     ankerctl_vol:
